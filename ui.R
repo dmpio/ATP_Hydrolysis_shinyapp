@@ -51,6 +51,13 @@ fluidPage(
       ),
       plotOutput(
         outputId = 'plot'
+      ),
+      actionLink(
+        inputId = "source_code",
+        label = "Source Code",
+        icon = icon("code"),
+        style = "float:right; bottom: 0;",
+        onclick = "window.open('https://github.com/dmpio/ATP_Hydrolysis_shinyapp', '_blank')"
       )
     )
   )
